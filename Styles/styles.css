@@ -4,7 +4,9 @@
   }
 
 
-
+.thumbnail,.title,.profile,.channel{
+    cursor: pointer;
+}
 
 
 .title{
@@ -13,6 +15,7 @@
     font-weight: 700;
     line-height: 20px;
     margin-bottom: 10px;
+
 
 }  
 
@@ -54,7 +57,46 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
+    
 }
+
+
+
+
+@media(max-width:500px){
+    .video-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (min-width:501px) and (max-width:750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width:999px)
+
+{
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+
+
+@media (min-width:1000px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+}
+
+
+
 
 
 .videot{
@@ -66,11 +108,8 @@
     position: absolute;
     bottom: 8px;
     right: 5px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
     border-radius: 2px;
+    padding:4px;
     
   
 }
