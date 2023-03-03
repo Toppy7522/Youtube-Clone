@@ -67,6 +67,7 @@
     border-color: rgb(192,192,192);
     margin-left: -1px;
     margin-right: 10px;
+    position: relative;
 
 
 }
@@ -182,6 +183,24 @@
     border-radius: 12px;
 
 }
+.noti{
+    position: relative;
+}
+
+.noti-number{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(200,0,0);
+    color: white;
+    font-family: Roboto,Arial;
+    font-size:11px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
 
 .dp{
     height: 32px;
@@ -195,7 +214,7 @@
     border-radius: 20px;
     border: none;
     transition: 0.15s;
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(175, 174, 174);
     cursor: pointer;
 
 
@@ -212,6 +231,27 @@
     cursor: pointer;
 
  
+ }
+ .searchbtn .tool{
+    font-size: 12px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left:8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+
+
+
+ }
+ .searchbtn:hover .tool{
+    opacity: 1;
  }
 
 
